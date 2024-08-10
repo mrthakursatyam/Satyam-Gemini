@@ -1,0 +1,143 @@
+.sidebar{
+    min-height: 100vh;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem;
+    background-color: rgba(240, 239, 239, 0.495);
+}
+
+.menu{
+    display: block;
+    cursor: pointer;
+}
+
+p{
+    font-size: 0.8rem;
+}
+
+img{
+    width: 1.1rem;
+}
+
+.new-chat{
+    display: inline-flex;
+    gap: 0.3rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4rem;
+    background-color: rgba(227, 227, 227, 0.674);
+    font-weight: 500;
+    color: grey;
+    margin-top: 3.5rem;
+    margin-bottom: 2rem;
+    padding: 0.5rem 0.8rem;
+    cursor: pointer;
+}
+
+.recent{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    animation: fadeIn 1.3s;
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+.recent-title{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.recent-entry{
+    display: flex;
+    gap: 0.8rem;
+    align-items: start;
+    color: black;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.recent-entry:hover{
+    background-color: rgba(181, 180, 180, 0.523);
+}
+
+.recent-entry p{
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.5rem;
+}
+
+.bottom-item{
+    cursor: pointer;
+}
+
+@media screen and (max-width:680px) {
+    .sidebar{
+        padding: 1rem 0.5rem;
+    }
+
+    .new-chat{
+        gap: 0.2rem;
+        font-weight: 400;
+        padding: 0.2rem 0.5rem;
+    }
+
+    .new-chat p{
+        font-size: 0.6rem;
+    }
+
+    .recent-entry{
+        gap: 0.3rem;
+        padding: 0.2rem 0.4rem;
+    }
+
+    img{
+        width: 0.7rem;
+    }
+
+    .recent-entry p{
+        font-size: 0.6rem;
+    }
+
+    .bottom p{
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .extSidebar{
+        min-height: 100%;
+        width: 60vw;
+        padding: 2rem;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: rgba(240, 239, 239, 0.495);
+        box-sizing: border-box;
+    }
+
+    .unextSidebar{
+        width: 10vw;
+        min-height: 100vh;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0.5rem;
+        background-color: rgba(240, 239, 239, 0.495);
+    }
+}
